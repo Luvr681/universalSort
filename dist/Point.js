@@ -7,8 +7,7 @@ class Point {
         this.y = y;
     }
     compare(otherPoint) {
-        const castedPoint = otherPoint;
-        return castedPoint.x + castedPoint.y > this.x + this.y ? -1 : castedPoint.x + castedPoint.y === this.x + this.y ? 0 : 1;
+        return otherPoint.x + otherPoint.y > this.x + this.y ? -1 : otherPoint.x + otherPoint.y === this.x + this.y ? 0 : 1;
     }
 }
 exports.Point = Point;

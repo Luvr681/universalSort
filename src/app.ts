@@ -9,6 +9,6 @@ const points: Point[] = [
 
 const descending = 1;
 
-const sortedPoints: Point[] = universalSort<Point>(points, <Point>(a: Point, b: Point) => (a as any).compare(b) * descending);
+const sortedPoints: Point[] = universalSort<Point>(points, (a: Point, b: Point) => a.compare(b) * descending);
 
 console.log(sortedPoints)
